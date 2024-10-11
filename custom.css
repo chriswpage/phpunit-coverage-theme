@@ -1,0 +1,255 @@
+/* Base Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #181818;
+    color: #e0e0e0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Popovers */
+.popover {
+    max-width: none;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    background-color: #1a1a1a; /* Dark background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb-item a {
+    color: #b388ff; /* High contrast purple for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #d1c4e9; /* Lighter purple on hover */
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #ddd; /* Slightly lighter text for active items */
+}
+
+/* Icon Styles */
+.octicon {
+    margin-right: 0.2em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+/* Table Enhancements */
+.table {
+    width: 100%;
+    color: #e0e0e0;
+    background-color: #1a1a1a; /* Dark background for tables */
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.table-bordered > thead > tr > td {
+    border-bottom-width: 0;
+}
+
+.table tbody > tr > td, .table thead > tr > td {
+    padding: 0.5rem;
+    vertical-align: middle;
+    border: none;
+    background-color: #222; /* Dark background for table rows */
+}
+
+.table-borderless th, .table-borderless td {
+    border: 0 !important;
+}
+
+/* Indicator Classes with Dark Backgrounds */
+
+/* Success: Dark gray background */
+.table tbody td.success, span.success {
+    background-color: #222; /* Dark gray */
+    color: rgba(50, 205, 50, 0.9); /* Light purple text */
+}
+
+/* Warning: Dark gray background */
+.table tbody td.warning, span.warning {
+    background-color: #222; /* Dark gray */
+    color: #ffb74d; /* Light orange text */
+}
+
+/* Danger: Dark gray background */
+.table tbody td.danger, span.danger {
+    background-color: #222; /* Dark gray */
+    color: #e57373; /* Light red text */
+}
+
+/* Info: Dark gray background */
+.table tbody td.info, span.info {
+    background-color: #222; /* Dark gray */
+    color: #ce93d8; /* Soft Purple Text */
+}
+
+/* Code Line Styling */
+td.codeLine {
+    font-family: 'Fira Code', monospace;
+    white-space: pre-wrap;
+    background-color: #282828;
+    color: #e0e0e0;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+/* Text Styling for Code Elements */
+td span.comment {
+    color: #8c8c8c;
+    font-style: italic;
+}
+
+td span.default, td span.keyword {
+    color: #d1c4e9;
+}
+
+pre span.string {
+    color: #c792ea;
+}
+
+/* Progress Bars with 3D Effect */
+.progress {
+    background-color: black;
+}
+
+/* Progress bar for Danger: Dark red gradient with more transparency */
+.table .progress-bar.bg-danger {
+    background: linear-gradient(145deg, rgba(139, 0, 0, 0.3), rgba(255, 69, 58, 0.3)); /* Dark red gradient */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(255, 69, 58, 0.3); /* Transparent shadow */
+    border-radius: 12px;
+}
+
+/* Progress bar for Warning: Orange gradient with less transparency */
+.table .progress-bar.bg-warning {
+    background: linear-gradient(145deg, rgba(255, 140, 0, 0.8), rgba(255, 165, 0, 0.8)); /* Orange gradient */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(255, 165, 0, 0.4); /* Less transparency */
+    border-radius: 12px;
+}
+
+/* Progress bar for Success: Green gradient with minimal transparency */
+.table .progress-bar.bg-success {
+    background: linear-gradient(145deg, rgba(34, 139, 34, 0.9), rgba(50, 205, 50, 0.9)); /* Green gradient */
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+
+/* Tooltip Style for Coverage Badges */
+span.success, span.warning, span.danger {
+    margin-right: 2px;
+    padding: 2px 8px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Fixed Scroll-to-Top Button */
+#toplink {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #6d4d80;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#toplink:hover {
+    background-color: #854f7a;
+}
+
+/* SVG Text Styling */
+svg text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    fill: #b39ddb;
+}
+
+/* Scrollable Tables */
+.scrollbox {
+    height: 250px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+/* Section Headings */
+table + .structure-heading {
+    border-top: 1px solid #444;
+    padding-top: 0.4rem;
+    font-weight: bold;
+    color: #bbb;
+}
+
+/* Legend Styling */
+.legend {
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background-color: #3a2a4d;
+    color: #ddd;
+}
+
+/* Links with High Contrast Purple */
+a {
+    color: #b388ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1c4e9;
+    text-decoration: underline;
+}
+
+
+td span.default
+{
+    color: #ccc;
+}
+
+td span.keyword {
+    color: #fdba5b;
+}
+
+.table tbody > tr.danger,
+.table tbody > tr.warning,
+.table tbody > tr.success,
+.table tbody > tr.covered-by-small-tests,
+.table tbody > tr.covered-by-medium-tests,
+.table tbody > tr.covered-by-large-tests
+{
+    background-color: #000;
+}
+
+.table tbody > tr.danger > td {
+    background-color: rgba(139, 0, 0, 0.4);
+}
+
+.table tbody > tr.danger > td > span.keyword {
+    color: rgba(155, 78, 78, 0.9);
+}
+.table tbody > tr.danger > td > span.default {
+    color: rgba(236, 142, 142, 0.9)
+}
+
+.table tbody > tr.covered-by-small-tests > td,
+.table tbody > tr.covered-by-medium-tests > td,
+.table tbody > tr.covered-by-large-tests > td {
+    background-color: rgba(34, 139, 34, 0.4);
+}
+
